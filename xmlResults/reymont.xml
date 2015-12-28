@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cesAna SYSTEM "xcesAnaIPI.dtd">
+<cesAna xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" type="lex disamb">
+<chunkList>
+ <chunk type="s">
+  <tok>
+   <orth>Czas</orth>
+   <lex disamb="1"><base>czas</base><ctag>subst:sg:nom:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>był</orth>
+   <lex disamb="1"><base>być</base><ctag>praet:sg:m3:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wiosenny</orth>
+   <lex disamb="1"><base>wiosenny</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>o</orth>
+   <lex disamb="1"><base>o</base><ctag>prep:loc</ctag></lex>
+  </tok>
+  <tok>
+   <orth>świtaniu</orth>
+   <lex disamb="1"><base>świtanie</base><ctag>subst:sg:loc:n</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Kwietniowy</orth>
+   <lex disamb="1"><base>kwietniowy</base><ctag>adj:sg:nom:m3:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>dzień</orth>
+   <lex disamb="1"><base>dzień</base><ctag>subst:sg:nom:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>dźwigał</orth>
+   <lex disamb="1"><base>dźwigać</base><ctag>praet:sg:m3:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>leniwie</orth>
+   <lex disamb="1"><base>leniwie</base><ctag>adv:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>z</orth>
+   <lex disamb="1"><base>z</base><ctag>prep:gen:nwok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>legowisk</orth>
+   <lex disamb="1"><base>legowisko</base><ctag>subst:pl:gen:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>mroków</orth>
+   <lex disamb="1"><base>mrok</base><ctag>subst:pl:gen:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>i</orth>
+   <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>mgieł</orth>
+   <lex disamb="1"><base>mgła</base><ctag>subst:pl:gen:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>jako</orth>
+   <lex disamb="1"><base>jako</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>ten</orth>
+   <lex disamb="1"><base>ten</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>parob</orth>
+   <lex disamb="1"><base>parob</base><ctag>subst:sg:nom:m1</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>któren</orth>
+   <lex disamb="1"><base>który</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>legł</orth>
+   <lex disamb="1"><base>lec</base><ctag>praet:sg:m1:perf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>spracowany</orth>
+   <lex disamb="1"><base>spracowany</base><ctag>adj:sg:nom:m1:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>a</orth>
+   <lex disamb="1"><base>a</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>nie</orth>
+   <lex disamb="1"><base>nie</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wywczasowawszy</orth>
+   <lex disamb="1"><base>wywczasować</base><ctag>pant:perf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>do</orth>
+   <lex disamb="1"><base>do</base><ctag>prep:gen</ctag></lex>
+  </tok>
+  <tok>
+   <orth>cna</orth>
+   <lex disamb="1"><base>cny</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>zrywać</orth>
+   <lex disamb="1"><base>zrywać</base><ctag>inf:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>ano</orth>
+   <lex disamb="1"><base>ano</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>musi</orth>
+   <lex disamb="1"><base>musieć</base><ctag>fin:sg:ter:imperf</ctag></lex>
+   <lex disamb="1"><base>musić</base><ctag>fin:sg:ter:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>nade</orth>
+   <lex disamb="1"><base>nad</base><ctag>prep:inst:wok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>dniem</orth>
+   <lex disamb="1"><base>dzień</base><ctag>subst:sg:inst:m3</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>by</orth>
+   <lex disamb="1"><base>by</base><ctag>comp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wnetki</orth>
+   <lex disamb="1"><base>wnetki</base><ctag>adv</ctag></lex>
+  </tok>
+  <tok>
+   <orth>imać</orth>
+   <lex disamb="1"><base>imać</base><ctag>inf:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>pługa</orth>
+   <lex disamb="1"><base>pług</base><ctag>subst:sg:gen:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>i</orth>
+   <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>do</orth>
+   <lex disamb="1"><base>do</base><ctag>prep:gen</ctag></lex>
+  </tok>
+  <tok>
+   <orth>orki</orth>
+   <lex disamb="1"><base>orka</base><ctag>subst:sg:gen:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>brać</orth>
+   <lex disamb="1"><base>brać</base><ctag>inf:imperf</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Poczynało</orth>
+   <lex disamb="1"><base>poczynać</base><ctag>praet:sg:n:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>dnieć</orth>
+   <lex disamb="1"><base>dnieć</base><ctag>inf:imperf</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Ale</orth>
+   <lex disamb="1"><base>ale</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>cichość</orth>
+   <lex disamb="1"><base>cichość</base><ctag>subst:sg:nom:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>była</orth>
+   <lex disamb="1"><base>być</base><ctag>praet:sg:f:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>jeszcze</orth>
+   <lex disamb="1"><base>jeszcze</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>całkiem</orth>
+   <lex disamb="1"><base>całkiem</base><ctag>adv</ctag></lex>
+  </tok>
+  <tok>
+   <orth>drętwa</orth>
+   <lex disamb="1"><base>drętwy</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>tyle</orth>
+   <lex disamb="1"><base>tyle</base><ctag>num:pl:nom:f:rec</ctag></lex>
+  </tok>
+  <tok>
+   <orth>jeno</orth>
+   <lex disamb="1"><base>jeno</base><ctag>qub</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>co</orth>
+   <lex disamb="1"><base>CO</base><ctag>subst:sg:acc:n</ctag></lex>
+   <lex disamb="1"><base>co</base><ctag>subst:sg:acc:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>rosy</orth>
+   <lex disamb="1"><base>rosa</base><ctag>subst:sg:gen:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>kapały</orth>
+   <lex disamb="1"><base>kapać</base><ctag>praet:pl:f:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>rzęsiście</orth>
+   <lex disamb="1"><base>rzęsiście</base><ctag>adv:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>z</orth>
+   <lex disamb="1"><base>z</base><ctag>prep:gen:nwok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>drzew</orth>
+   <lex disamb="1"><base>drzewo</base><ctag>subst:pl:gen:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>pośpionych</orth>
+   <lex disamb="1"><base>pośpić</base><ctag>ppas:pl:gen:n:perf:aff</ctag></lex>
+  </tok>
+  <tok>
+   <orth>w</orth>
+   <lex disamb="1"><base>w</base><ctag>prep:loc:nwok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>mącie</orth>
+   <lex disamb="1"><base>mąt</base><ctag>subst:sg:loc:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>nieprzejrzanym</orth>
+   <lex disamb="1"><base>nieprzejrzany</base><ctag>adj:sg:loc:m3:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Niebo</orth>
+   <lex disamb="1"><base>niebo</base><ctag>subst:sg:nom:n</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>kiej</orth>
+   <lex disamb="1"><base>ki</base><ctag>adj:sg:loc:f:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>ta</orth>
+   <lex disamb="1"><base>ten</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>płachta</orth>
+   <lex disamb="1"><base>płachta</base><ctag>subst:sg:nom:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>modrawa</orth>
+   <lex disamb="1"><base>modrawy</base><ctag>adj:sg:nom:f:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>przejęta</orth>
+   <lex disamb="1"><base>przejąć</base><ctag>ppas:sg:nom:f:perf:aff</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wilgotnością</orth>
+   <lex disamb="1"><base>wilgotność</base><ctag>subst:sg:inst:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>i</orth>
+   <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>orosiała</orth>
+   <lex disamb="1"><base>orosieć</base><ctag>praet:sg:f:perf</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>przecierało</orth>
+   <lex disamb="1"><base>przecierać</base><ctag>praet:sg:n:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>się</orth>
+   <lex disamb="1"><base>się</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>już</orth>
+   <lex disamb="1"><base>już</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>ździebko</orth>
+   <lex disamb="1"><base>ździebko</base><ctag>subst:sg:nom:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>nad</orth>
+   <lex disamb="1"><base>nad</base><ctag>prep:inst:nwok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>ziemią</orth>
+   <lex disamb="1"><base>Ziemia</base><ctag>subst:sg:inst:f</ctag></lex>
+   <lex disamb="1"><base>ziemia</base><ctag>subst:sg:inst:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>czarną</orth>
+   <lex disamb="1"><base>czarny</base><ctag>adj:sg:inst:f:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>,</orth>
+   <lex disamb="1"><base>,</base><ctag>interp</ctag></lex>
+  </tok>
+  <tok>
+   <orth>głuchą</orth>
+   <lex disamb="1"><base>głuchy</base><ctag>adj:sg:acc:f:pos</ctag></lex>
+  </tok>
+  <tok>
+   <orth>i</orth>
+   <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>zgoła</orth>
+   <lex disamb="1"><base>zgoła</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>w</orth>
+   <lex disamb="1"><base>w</base><ctag>prep:loc:nwok</ctag></lex>
+  </tok>
+  <tok>
+   <orth>mrokach</orth>
+   <lex disamb="1"><base>mroka</base><ctag>subst:pl:loc:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>zagubioną</orth>
+   <lex disamb="1"><base>zagubiony</base><ctag>adj:sg:acc:f:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Mgły</orth>
+   <lex disamb="1"><base>mgła</base><ctag>subst:pl:nom:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>niby</orth>
+   <lex disamb="1"><base>niby</base><ctag>prep:nom</ctag></lex>
+  </tok>
+  <tok>
+   <orth>mleko</orth>
+   <lex disamb="1"><base>mleko</base><ctag>subst:sg:nom:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wzburzone</orth>
+   <lex disamb="1"><base>wzburzyć</base><ctag>ppas:sg:nom:n:perf:aff</ctag></lex>
+  </tok>
+  <tok>
+   <orth>przy</orth>
+   <lex disamb="1"><base>przy</base><ctag>prep:loc</ctag></lex>
+  </tok>
+  <tok>
+   <orth>udoju</orth>
+   <lex disamb="1"><base>udój</base><ctag>subst:sg:loc:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>zalewały</orth>
+   <lex disamb="1"><base>zalewać</base><ctag>praet:pl:m3:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>łęgi</orth>
+   <lex disamb="1"><base>łąg</base><ctag>subst:pl:acc:m3</ctag></lex>
+   <lex disamb="1"><base>łęg</base><ctag>subst:pl:acc:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>i</orth>
+   <lex disamb="1"><base>i</base><ctag>conj</ctag></lex>
+  </tok>
+  <tok>
+   <orth>pola</orth>
+   <lex disamb="1"><base>pole</base><ctag>subst:pl:acc:n</ctag></lex>
+  </tok>
+  <tok>
+   <orth>nizinne</orth>
+   <lex disamb="1"><base>nizinny</base><ctag>adj:pl:acc:n:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+ <chunk type="s">
+  <tok>
+   <orth>Kokoty</orth>
+   <lex disamb="1"><base>kokota</base><ctag>subst:pl:nom:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>zaczęły</orth>
+   <lex disamb="1"><base>zacząć</base><ctag>praet:pl:f:perf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>piać</orth>
+   <lex disamb="1"><base>piać</base><ctag>inf:imperf</ctag></lex>
+  </tok>
+  <tok>
+   <orth>na</orth>
+   <lex disamb="1"><base>na</base><ctag>prep:acc</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wyprzódki</orth>
+   <lex disamb="1"><base>wyprzódki</base><ctag>burk</ctag></lex>
+  </tok>
+  <tok>
+   <orth>gdziesik</orth>
+   <lex disamb="1"><base>gdziesik</base><ctag>subst:sg:acc:m3</ctag></lex>
+  </tok>
+  <tok>
+   <orth>po</orth>
+   <lex disamb="1"><base>po</base><ctag>prep:loc</ctag></lex>
+  </tok>
+  <tok>
+   <orth>wsiach</orth>
+   <lex disamb="1"><base>wieś</base><ctag>subst:pl:loc:f</ctag></lex>
+  </tok>
+  <tok>
+   <orth>jeszcze</orth>
+   <lex disamb="1"><base>jeszcze</base><ctag>qub</ctag></lex>
+  </tok>
+  <tok>
+   <orth>niewidnych</orth>
+   <lex disamb="1"><base>niewidny</base><ctag>adj:pl:gen:f:pos</ctag></lex>
+  </tok>
+  <ns/>
+  <tok>
+   <orth>.</orth>
+   <lex disamb="1"><base>.</base><ctag>interp</ctag></lex>
+  </tok>
+ </chunk>
+</chunkList>
+</cesAna>
