@@ -2,7 +2,6 @@ from os import listdir
 from os.path import isfile, join
 
 from trainingSetParser import save_characteristics_in_db, clear_characteristics_collection
-from xmlParser import XmlParser
 
 texts_path = './texts'
 author_text_files = [f for f in listdir(texts_path) if isfile(join(texts_path, f))]
