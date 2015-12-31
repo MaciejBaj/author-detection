@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+from collections import Counter
 import os
 # https://github.com/CenturyLinkLabs/panamax-ui/wiki/How-To%3A-Port-Forwarding-on-VirtualBox
 
@@ -12,7 +13,10 @@ class XmlParser:
     return [base_word for base_word in self.root.iter('base')].__len__()
 
   def get_base_form_words(self):
-    return [base_word.text for base_word in self.root.iter('base')]
+    base_lowercase_words = [base_word.text.lower() for base_word in self.root.iter('base')]
+    #todo: dot cannot be json key
+    base_lowercase_words = filter(lambda word: word != "." and word != ",", base_lowercase_words)
+    return map((lambda (word_frequency, val): {word_frequency: val}), Counter(base_lowercase_words).most_common())
 
   def get_parts_of_speech_frequency(self):
     part_of_speech_counter = {}
