@@ -1,6 +1,7 @@
 from pymongo import MongoClient
-from textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
-  average_sentence_length, get_plain_words
+
+from parser.textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
+  average_sentence_length
 from xmlParser import XmlParser
 
 client = MongoClient('mongodb://localhost:27017/')

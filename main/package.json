@@ -1,0 +1,29 @@
+{
+  "name": "author-detection",
+  "version": "1.0.0",
+  "description": "node app communicating with python services to detect text author",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciejBaj/author-detection.git"
+  },
+  "keywords": [
+    "author",
+    "detection"
+  ],
+  "author": "MaciejBaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaciejBaj/author-detection/issues"
+  },
+  "homepage": "https://github.com/MaciejBaj/author-detection#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "lodash": "^4.0.0"
+  }
+}

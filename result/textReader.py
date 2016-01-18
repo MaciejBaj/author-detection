@@ -1,9 +1,6 @@
-import os.path, math
-from sklearn import neighbors, datasets, naive_bayes
-from pymongo import MongoClient
-import numpy as np
+from sklearn import naive_bayes
 
-from textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
+from parser.textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
   average_sentence_length
 
 def print_results_in_file(resultFileContent):
@@ -13,10 +10,6 @@ def print_results_in_file(resultFileContent):
       resultFile.write("%s\n" % result)
 
 if __name__ == '__main__':
-  client = MongoClient('mongodb://localhost:27017/')
-  db = client.authors_db
-  collection = db.authors_stats
-
   print "\nReading File...\n"
   text = open('./toDetectFile', 'r').readlines()
   resultFileContent = ['average word length: ', average_word_length(text),
@@ -35,13 +28,9 @@ if __name__ == '__main__':
   inputCharacteristics = map(float, inputCharacteristicsText[1::2])
 
   trainingSet = [reymontCharacteristics, sienkiewiczCharacteristics]
+  gaussian_naive_bayes = naive_bayes.GaussianNB()
+  gaussian_naive_bayes.fit(trainingSet, ['reymont', 'sienkiewicz'])
 
-  print reymontCharacteristics, sienkiewiczCharacteristics, inputCharacteristics
-
-  # knn = neighbors.KNeighborsClassifier()
-  knn = naive_bayes.GaussianNB()
-  knn.fit(trainingSet, ['reymont', 'sienkiewicz'])
-
-  print knn.predict(inputCharacteristics)
+  print gaussian_naive_bayes.predict(inputCharacteristics)
 
   print_results_in_file(resultFileContent)
