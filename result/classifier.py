@@ -1,19 +1,10 @@
 from sklearn import naive_bayes
 from pymongo import MongoClient
+import json
 
 client = MongoClient('mongodb://localhost:27017/')
 db = client.authors_db
 collection = db.authors_stats
-
-example_frequencies = {"adv": 0.0194174757281553,
-        "praet" : 0.0776699029126214,
-        "imps" : 0.0291262135922330,
-        "pred" : 0.0097087378640777,
-        "interp" : 0.1067961165048544,
-        "subst" : 0.3398058252427185}
-
-to_detect_text_numerical_characteristics = [22.25, 2.75, 0.7415730337078652, 0.8202247191011236, 5.853932584269663]
-
 
 def get_training_set_data():
   return collection.find({})
@@ -46,7 +37,14 @@ def get_authors_top_base_words_frequencies(name):
                               'base_words': 1})
 
 
-def classify_with_db_training_set():
+def classify_with_db_training_set_with_file():
+
+  characteristics_from_file = open('./results', 'r').read().split('\n')
+  to_detect_text_numerical_characteristics = map(float, characteristics_from_file[1::2])
+
+  with open('partsOfSpeechResults') as data_file:
+    example_frequencies = json.load(data_file)
+
   author_names = get_author_names_from_db()
   gaussian_naive_bayes = naive_bayes.GaussianNB()
 
@@ -57,13 +55,10 @@ def classify_with_db_training_set():
   numerical_characteristics_classification_result = gaussian_naive_bayes.predict(to_detect_text_numerical_characteristics)
 
   # PARTS OF SPEECH
+
   authors_parts_of_speech_frequencies = map(get_authors_parts_of_speech_frequencies, author_names)
-  # print(authors_parts_of_speech_frequencies)
   parts_of_speech_frequencies_training_set = pick_parts_of_speech(authors_parts_of_speech_frequencies, example_frequencies)
-
-  print parts_of_speech_frequencies_training_set
   gaussian_naive_bayes.fit(parts_of_speech_frequencies_training_set, author_names)
-
   example_frequencies_as_array = get_values_from_json(example_frequencies)
   parts_of_speech_frequencies_classifications_result = gaussian_naive_bayes.predict(example_frequencies_as_array)
 
@@ -93,7 +88,6 @@ def convert_characteristics_into_2d_array(characteristics_map):
   numerical_characteristics_training_set = []
   for characteristics in characteristics_map:
     characteristics_values = []
-    print "ITME", characteristics.items()
     for key, value in characteristics.items():
       characteristics_values.append(float(value))
     numerical_characteristics_training_set.append(characteristics_values)
