@@ -4,7 +4,8 @@ from textCharacteristics import average_word_length, type_token_ratio, hapax_leg
   average_sentence_length
 from xmlParser import XmlParser
 
-client = MongoClient('mongodb://10.24.4.96:27017/')
+# client = MongoClient('mongodb://10.24.4.96:27017/')
+client = MongoClient('mongodb://localhost:27017/')
 db = client.authors_db
 collection = db.authors_stats
 
@@ -39,7 +40,7 @@ def clear_author_characteristics(name):
 
 def save_characteristics_in_db(file_path, author_name, xml_file_path):
   text = open(file_path, 'r').readlines()
-  xml_tree = XmlParser(xml_file_path)
+  # xml_tree = XmlParser(xml_file_path)
 
   author_position_characteristics = {"name": author_name,
                                      "average_word_length": average_word_length(text),
@@ -47,9 +48,9 @@ def save_characteristics_in_db(file_path, author_name, xml_file_path):
                                      "hapax_legomana_ratio": hapax_legomana_ratio(text),
                                      "average_sentence_length": average_sentence_length(text),
                                      "average_sentence_complexity": avg_sentence_complexity(text),
-                                     "base_words": xml_tree.get_base_form_words(),
-                                     "parts_of_speech_frequencies": xml_tree.get_parts_of_speech_frequency(),
-                                     "words_count": xml_tree.get_number_of_words()
+                                     # "base_words": xml_tree.get_base_form_words(),
+                                     # "parts_of_speech_frequencies": xml_tree.get_parts_of_speech_frequency(),
+                                     # "words_count": xml_tree.get_number_of_words()
                                      }
   author_data = collection.find_one({"name": author_name})
   if author_data:
