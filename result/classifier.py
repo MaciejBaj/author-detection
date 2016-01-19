@@ -46,7 +46,7 @@ def get_authors_top_base_words_frequencies(name):
                               'base_words': 1})
 
 
-def classify_with_db_training_set(inputCharacteristics):
+def classify_with_db_training_set():
   author_names = get_author_names_from_db()
   gaussian_naive_bayes = naive_bayes.GaussianNB()
 
@@ -67,10 +67,8 @@ def classify_with_db_training_set(inputCharacteristics):
   example_frequencies_as_array = get_values_from_json(example_frequencies)
   parts_of_speech_frequencies_classifications_result = gaussian_naive_bayes.predict(example_frequencies_as_array)
 
-  print("numerical classification: ", numerical_characteristics_classification_result,
-        " parts of speech freq classification: ", parts_of_speech_frequencies_classifications_result)
-
-  return parts_of_speech_frequencies_classifications_result
+  return "numerical classification: " + numerical_characteristics_classification_result[0] + \
+                     " parts of speech freq classification: " + parts_of_speech_frequencies_classifications_result[0]
 
 
 def pick_parts_of_speech(authors_parts_of_speech_frequencies, example_frequencies):

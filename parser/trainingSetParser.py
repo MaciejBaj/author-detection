@@ -1,10 +1,10 @@
 from pymongo import MongoClient
 
-from parser.textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
+from textCharacteristics import average_word_length, type_token_ratio, hapax_legomana_ratio, avg_sentence_complexity, \
   average_sentence_length
 from xmlParser import XmlParser
 
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://10.24.4.96:27017/')
 db = client.authors_db
 collection = db.authors_stats
 
@@ -31,6 +31,10 @@ def recalculate_morphological_characteristics_keeping_impact(author_data, old_po
 
 def clear_characteristics_collection():
   collection.remove()
+
+
+def clear_author_characteristics(name):
+  collection.remove({'name': name})
 
 
 def save_characteristics_in_db(file_path, author_name, xml_file_path):

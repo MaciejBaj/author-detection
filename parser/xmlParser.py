@@ -16,7 +16,7 @@ class XmlParser:
     base_lowercase_words = [base_word.text.lower() for base_word in self.root.iter('base')]
     #todo: dot cannot be json key
     base_lowercase_words = filter(lambda word: word != "." and word != ",", base_lowercase_words)
-    return map((lambda (word_frequency, val): {word_frequency: val}), Counter(base_lowercase_words).most_common())
+    return map((lambda (word_frequency, val): {word_frequency: val}), Counter(base_lowercase_words).most_common(100))
 
   def get_parts_of_speech_frequency(self):
     part_of_speech_counter = {}

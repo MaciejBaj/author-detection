@@ -34,7 +34,7 @@ app.route('/detectAuthor').post(function(req, res) {
     var resultRequest = http.request(resultRequestOptions, function(resultResponse) {
       return res.status(200).send("text has been classified: ", resultResponse);
     });
-    resultRequest.write(parserResponse);
+    resultRequest.write(JSON.stringify({"characteristics": parserResponse}));
     resultRequest.end();
   });
 
