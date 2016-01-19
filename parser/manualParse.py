@@ -25,5 +25,8 @@ if __name__ == '__main__':
                      'average sentence length: ', average_sentence_length(text),
                      'average sentence complexity: ', avg_sentence_complexity(text)]
 
+
   print_results_in_file('./numericalResults', resultFileContent)
   XmlParser.produce_xml_with_morphological_data('./numericalResults', './xmlResults/toDetect.xml')
+  xml_tree = XmlParser('./xmlResults/toDetect.xml')
+  print_results_in_file('./partsOfSpeechResults', {"parts_of_speech_frequencies": xml_tree.get_parts_of_speech_frequency()})
