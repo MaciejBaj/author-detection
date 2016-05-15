@@ -42,4 +42,4 @@ class PartsOfSpeechClassifier:
         select_speech_parts_characteristics(example_frequencies,
                                             pick_parts_of_speech_common_for_all(positions_parts_of_speech_frequencies,
                                                                                 example_frequencies))
-    return gaussian_naive_bayes.predict(np.array(possible_example_parts).reshape(-1, 1))[0]
+    return gaussian_naive_bayes.predict(np.array(possible_example_parts).reshape(-1, 1))
