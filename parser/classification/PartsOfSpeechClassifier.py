@@ -1,6 +1,6 @@
 from __future__ import division
 from sklearn import naive_bayes
-import numpy
+import numpy as np
 
 
 def select_speech_parts_characteristics(input, speech_parts):
@@ -37,9 +37,9 @@ class PartsOfSpeechClassifier:
     parts_of_speech_frequencies_training_set = \
         pick_parts_of_speech(positions_parts_of_speech_frequencies, example_frequencies)
 
-    gaussian_naive_bayes.fit(parts_of_speech_frequencies_training_set, class_names)
+    gaussian_naive_bayes.fit(parts_of_speech_frequencies_training_set, np.array(class_names))
     possible_example_parts = \
         select_speech_parts_characteristics(example_frequencies,
                                             pick_parts_of_speech_common_for_all(positions_parts_of_speech_frequencies,
                                                                                 example_frequencies))
-    return gaussian_naive_bayes.predict(numpy.array(possible_example_parts).reshape(-1, 1))[0]
+    return gaussian_naive_bayes.predict(np.array(possible_example_parts).reshape(-1, 1))[0]

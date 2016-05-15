@@ -46,6 +46,7 @@ export class LearningTab extends React.Component<ILearningTab, void> {
           multiLine={true}
           onChange={event => this.setState({text: event.target.value})}
           fullWidth={true}
+          rowsMax={20}
           rows={5}
         />
         <br />

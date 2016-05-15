@@ -1,11 +1,11 @@
 from __future__ import division
 from sklearn import naive_bayes
-
+import numpy as np
 numerical_characteristics = ["average_sentence_length",
                              "average_sentence_complexity",
                              "average_word_length",
                              "type_token_ratio",
-                             "hapax_legomana_ratio"]
+                             "hapax_legomenon_ratio"]
 
 
 def select_numerical_characteristics(input, precision=7):
@@ -25,5 +25,5 @@ class NumericalFeaturesClassifier:
     class_names = map(lambda x: x["classes"][class_name], training_set)
 
     numerical_characteristics_training_set = map(lambda x: select_numerical_characteristics(x), training_set)
-    gaussian_naive_bayes.fit(numerical_characteristics_training_set, class_names)
-    return gaussian_naive_bayes.predict(to_detect_text_numerical_characteristics)
+    gaussian_naive_bayes.fit(numerical_characteristics_training_set, np.array(class_names))
+    return gaussian_naive_bayes.predict([to_detect_text_numerical_characteristics])

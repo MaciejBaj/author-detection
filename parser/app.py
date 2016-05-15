@@ -35,7 +35,9 @@ class Recognize(Resource):
       print "received recognize request"
       classes_to_guess = {"author": "true", "type": "true", "age": "false", "male": "false"}
       to_detect = get_record_from_request(classes_to_guess)
-      return ClassifierAggregator().full_classification(to_detect)
+      result = ClassifierAggregator().full_classification(to_detect)
+      print result
+      return result
 
     except Exception as e:
       return {'error': str(e)}

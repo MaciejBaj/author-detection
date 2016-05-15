@@ -5,7 +5,7 @@ class MongoCollection:
   def __init__(self):
     client = MongoClient('mongodb://localhost:27017/')
     db = client.stylometric_analyses
-    self.collection = db.analysed_texts
+    self.collection = db.long_analysed_texts
 
   def get_first_from_db(self):
     return self.collection.find_one({})

@@ -39,6 +39,7 @@ def clear_author_characteristics(name):
 
 
 def save_in_db(record):
+  print "inserting into db ... "
   collection.insert_one(record)
 
 
@@ -64,5 +65,4 @@ def create_new_record(xml_string, text_classes, raw_text):
   t0 = time()
   author_position_characteristics.update(xml_tree.get_top_and_rarest_used_words())
   print "Top and rarest words counted in  %fs" % (time() - t0)
-  print "putting into db: ", author_position_characteristics
   return author_position_characteristics
