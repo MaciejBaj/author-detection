@@ -1,102 +1,35 @@
+from __future__ import division
+import numpy as np
+
+special_characters = ('?', '!', '.', ',', ':', ';', '-', '#', '*', '(', ')', '"')
+sentence_terminators = ('?', '!', '.')
 
 
-def read_in_chunks(fileObj, chunkSize=2048):
-  while True:
-    data = fileObj.read(chunkSize)
-    if not data:
-      break
-    yield data
+def count_numerical_statistics(words):
 
-def clean_up(s):
-  punctuation = '''!"',;:.-?)([]<>*#\n\t\r'''
-  result = s.lower().strip(punctuation)
-  return result
+  current_sentence_length = 0
+  sentence_lengths = []
+  special_characters_count = 0
+  words_lengths = []
+  words_count = len(words)
 
-def get_plain_words(text):
-  return [clean_up(each_word) for each_sentence in text
-           for each_word in each_sentence.split()]
-
-def average_word_length(text):
-  words = [clean_up(each_word) for each_sentence in text
-           for each_word in each_sentence.split()]
-
-  # Replace each word with its length
-  words = [len(each_word) for each_word in words]
-  average = sum(words) / float(len(words))
-
-  return average
+  for word in words:
+    words_lengths.append(len(word))
+    current_sentence_length += 1
+    if word in special_characters:
+      special_characters_count += 1
+      if word in sentence_terminators:
+        sentence_lengths.append(current_sentence_length)
+        current_sentence_length = 0
+  return {
+    "words_count": words_count,
+    "average_word_length": np.mean(words_lengths),
+    "average_sentence_length": np.mean(sentence_lengths),
+    "average_sentence_complexity": special_characters_count / words_count,
+    "type_token_ratio": type_token_ratio(words)
+  }
 
 
-def type_token_ratio(text):
-  words = [clean_up(each_word) for each_sentence in text
-           for each_word in each_sentence.split()]
-  ttr = len(set(words)) / float(len(words))
-  return ttr
-
-
-def hapax_legomana_ratio(text):
-  words = [clean_up(each_word) for each_sentence in text
-           for each_word in each_sentence.split()]
-  seen_once = []
-  seen_twice = []
-
-  for index, word in enumerate(words):
-    # print "in HLR for block", index, len(words)
-    seen_once.append(word)
-    words[index] = None
-    if word in words:
-      seen_twice.append(word)
-      # print "in HLR if  block", index, len(words)
-
-  exactly_once = [word for word in seen_once if word not in seen_twice]
-  HLR = len(exactly_once) / float(len(words))
-  return HLR
-
-
-def split_on_separators(original, separators):
-
-  # To do: Complete this function's body to meet its specification.
-  original__ = str(original)
-  split_marker = 'MY_SPLIT_MARKER'
-  for each in original__:
-    if each in separators:
-      original__ = original__.replace(each, split_marker)
-  result = original__.split(split_marker)
-
-  return result
-
-
-def average_sentence_length(text):
-  terminators = '?!.'
-
-  # Get alllines from text as a huge string.
-  #  Need to find better Impl
-  all_lines = ''.join(each_line.replace('\n', ' ') for each_line in text)
-  sentences = split_on_separators(all_lines, terminators)  # Get sentences
-
-  while ' ' in sentences: sentences.remove(' ')  # Remove empty sentences
-
-  sentences = [each_sentence.split() for each_sentence in sentences]
-
-  total_words = len([clean_up(each_word) for each_sent in sentences
-                     for each_word in each_sent
-                     if clean_up(each_word) != ''])
-  total_sentences = len(sentences)
-  return float(total_words) / float(total_sentences)
-
-
-def avg_sentence_complexity(text):
-
-  sentence_terminators = '?!.'
-  phrase_terminators = ',:;'
-  # Get alllines from text as a huge string. # Need to find better Impl
-  all_lines = ''.join(each_line.replace('\n', ' ') for each_line in text)
-  sentences = split_on_separators(all_lines,
-                                  sentence_terminators)  # Get sentences
-  while ' ' in sentences: sentences.remove(' ')  # Remove empty sentences
-
-  phrases = [split_on_separators(each_sentence, phrase_terminators)
-             for each_sentence in sentences]
-  phrase_lengths = [len(each) for each in phrases]
-
-  return sum(phrase_lengths) / float(len(phrase_lengths))
+# words variety
+def type_token_ratio(words):
+  return len(set(words)) / float(len(words))

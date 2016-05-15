@@ -1,0 +1,24 @@
+.app-bar {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tab-content {
+  margin: 1rem;
+  padding: 1rem;
+}
+.attribute-checkbox {
+  margin-bottom: 1rem;
+}
+
+.attribute-text-field {
+  margin: 1rem;
+}
+
+.hidden-frame {
+  display: none;
+}
+
+.dropzone-container {
+
+}
